@@ -1,0 +1,12 @@
+import random
+magicnumber = random.randrange(1, 101)
+guess = int(input("Guessing game! What number between 1 and 100 am I thinking of?"))
+while(True):
+    if guess > magicnumber:
+        guess = int(input("Too high. Guess again"))
+    elif guess < magicnumber:
+        guess = int(input("Too low. Guess again."))
+    else:
+        print("Correct! Amazing!")
+        break
+
